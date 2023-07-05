@@ -1,0 +1,275 @@
+.header {
+  max-width: 100%;
+  padding: 14px 0 14px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  width: 420px;
+  padding-top: 39px;
+  padding-left: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  transition: transform .3s ease-in-out;
+  transform: translateX(-110%);
+}
+
+.is-active {
+  visibility: visible;
+  transform: none;
+}
+
+.header__burger {
+  display: none;
+  padding: 0;
+  width: 30px;
+  height: 23px;
+  background-color: inherit;
+  border: none;
+}
+
+.menu__btn {
+  padding: 0;
+  margin-bottom: 100px;
+  width: 23px;
+  height: 23px;
+  background-color: inherit;
+  border: none;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.header__nav {
+  position: relative;
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header__item {
+  margin-right: 75px;
+}
+
+.header__item:last-child {
+  margin-right: 80px;
+}
+
+.header__button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: inherit;
+  border: none;
+}
+
+.header__form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 13px 16px 32px;
+  z-index: 7;
+  visibility: hidden;
+  top: -15px;
+  bottom: 0;
+  right: -10px;
+  width: 539px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  transition: transform .3s ease-in-out;
+  transform: translatey(-170%);
+}
+
+.header__form_active {
+  transform: none;
+  visibility: visible;
+}
+
+.header__search {
+  padding: 0;
+  padding-bottom: 10px;
+  outline: none;
+  width: 412px;
+  border: none;
+  border-bottom: 1px solid #DCDCDC;;
+}
+
+.header__search::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ADADAD;
+}
+
+.header__submit:hover rect {
+  fill: #FF9900;
+}
+
+.header__submit:hover path {
+  stroke: #FF9900;
+}
+
+.header__submit:focus rect {
+  fill: #333333;
+}
+
+.header__submit:focus path {
+  stroke: #333333;
+}
+
+.header__submit:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 4px;
+}
+
+.header__submit:active rect {
+  fill: #FF9900;
+}
+
+.header__submit:active path {
+  stroke: #FF9900;
+}
+
+.header__submit:active {
+  outline: none;
+}
+
+.header__submit_search {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: inherit;
+  border: none;
+}
+
+.header__link {
+  padding: 5px;
+  transition-property: border, outline, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.header__link:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FF9900;
+}
+
+.header__link:focus {
+  outline: 2px solid #FF9900;
+}
+
+.header__link:active {
+  color: #E1670E;
+  outline: none;
+  border-bottom: 2px solid #E1670E;
+}
+
+@media (max-width: 1170px) {
+  .header {
+    padding: 26px 0 26px 0;
+  }
+
+  .header__logo {
+    width: 150px;
+    height: 48px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__menu {
+    height: 769px;
+  }
+
+  .header__burger {
+    display: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0 11px 0;
+  }
+
+  .header__menu {
+    padding-top: 21px;
+    height: 732px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 17px 0 17px 0;
+  }
+
+  .menu__btn {
+    margin-bottom: 32px;
+  }
+
+  .header__menu {
+    padding-top: 23px;
+    padding-left: 15px;
+    width: 320px;
+    height: 377px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__logo {
+    width: 110px;
+    height: 35px;
+  }
+
+  .header__form {
+    padding-left: 10px;
+    width: 300px;
+  }
+
+  .header__search {
+    width: 200px;
+  }
+
+  .header__search::placeholder {
+    font-size: 14px;
+  }
+}
+
+
+

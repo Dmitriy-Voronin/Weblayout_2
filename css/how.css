@@ -1,0 +1,329 @@
+.how {
+  padding-top: 100px;
+  color: #333333;
+}
+
+.how__title {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.how__list {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.how-item__btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  transition-property: color, outline;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.how-item__btn_active {
+  color: #FF9900;
+}
+
+.how__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.how-item__btn:hover {
+   color: #FF9900;
+}
+
+.how-item__btn:focus {
+  color: #333333;
+  outline: 2px solid #FF9900;
+  outline-offset: 5px;
+}
+
+.how-item__btn:active {
+  color: #E1670E;
+  outline: none;
+}
+
+.how__wrap {
+  display: none;
+}
+
+.how__wrap_active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__wrap::after {
+  content: '';
+  display: block;
+  width: 870px;
+  min-height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.how__wrap_1::after {
+  background-image: url("../img/Rectangle18.png");
+}
+
+.how__wrap_2::after {
+  background-image: url("../img/how-2.png");
+}
+
+.how__wrap_3::after {
+  background-image: url("../img/how-3.png");
+}
+
+.how__wrap_4::after {
+  background-image: url("../img/how-4.png");
+}
+
+.how-content__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.how-content__descr {
+  margin-bottom: 50px;
+  margin-right: 15px;
+  max-width: 758px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.how-content__button {
+  padding: 19px 37px;
+  border: none;
+  background: #FF9900;
+  color: #FFFFFF;
+  line-height: 20px;
+  transition: background-color .2s ease;
+}
+
+.how-content__button:hover {
+  background-color: #F7B045;
+  outline: none;
+}
+
+.how-content__button:focus {
+  background-color: #F7B045;
+  outline: none;
+}
+
+.how-content__button:active {
+  background-color: #E1670E;;
+  transform: translateY(2px);
+  outline: none;
+}
+
+.how-content__button_contract {
+  border: none;
+  outline: 1px solid #333333;
+  background-color: inherit;
+  color: #333333;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.how-content__button:not(:last-child) {
+  margin-right: 32px;
+}
+
+.how-content__button_contract:hover {
+  background-color: #666666;
+}
+
+.how-content__button_contract:focus {
+  background-color: #666666;
+  outline: none;
+}
+
+.how-content__button_contract:active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1300px) {
+  .how-content__descr {
+    margin-bottom: 25px;
+    margin-right: 20px;
+    max-width: 668px;
+  }
+
+  .how-content__button {
+    padding: 21px 38px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .how {
+    padding-top: 80px;
+  }
+
+  .how__list {
+    margin-bottom: 50px;
+  }
+
+  .how__wrap::after {
+    content: '';
+    margin-top: 15px;
+    width: 437px;
+    height: 689px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .how__wrap_1::after {
+    background-image: url("../img/how-img-1024.jpg");
+  }
+
+  .how-content__descr {
+    /* margin-bottom: 25px; */
+    max-width: 437px;
+  }
+}
+
+@media (max-width: 992px) {
+  .how__title {
+    margin-bottom: 45px;
+  }
+
+  .how__item:not(:last-child) {
+    margin: 0;
+  }
+
+  .how__list {
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .how__wrap {
+    flex-direction: column;
+  }
+
+  .how__wrap::after {
+   display: none;
+  }
+
+  .how-content__descr {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .how__wrap::before {
+    content: '';
+    display: block;
+    margin-bottom: 40px;
+    min-width: 290px;
+    min-height: 284px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .how__wrap_1::before {
+    background-image: url("../img/how-768.jpg");
+  }
+
+  .how__wrap_2::before {
+    background-image: url("../img/how-2.png");
+  }
+
+  .how__wrap_3::before {
+    background-image: url("../img/how-3.png");
+  }
+
+  .how__wrap_4::before {
+    background-image: url("../img/how-4.png");
+  }
+
+  .how-content__button {
+    padding: 19px 38px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .how {
+    padding-top: 60px;
+  }
+
+  .how__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .how-item__btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how__list {
+    margin-bottom: 16px;
+  }
+
+  .how__wrap::before {
+    content: '';
+    display: block;
+    margin-bottom: 16px;
+    min-width: 290px;
+    min-height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .how__wrap_1::before {
+    background-image: url("../img/how-320.png");
+  }
+
+  .how__wrap_2::before {
+    background-image: url("../img/how-2.png");
+  }
+
+  .how__wrap_3::before {
+    background-image: url("../img/how-3.png");
+  }
+
+  .how__wrap_4::before {
+    background-image: url("../img/how-4.png");
+  }
+
+  .how-content__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .how-content__descr {
+    margin-bottom: 15px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-content__button {
+    padding: 13px 44px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .how-content__button_contract {
+    padding: 12px 31px;
+    font-weight: 400;
+  }
+
+  .how-content__button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
