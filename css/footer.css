@@ -201,7 +201,7 @@
 .footer__checkbox_agree::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 7.5px;
   left: 0;
   display: inline-block;
   width: 14px;
@@ -359,6 +359,14 @@
     padding: 12px 28px;
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .footer__checkbox_agree::before {
+    top: 9px;
+  }
+
+  .footer__checkbox_agree::after {
+    top: 13px;
   }
 
   .footer__left {

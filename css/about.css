@@ -286,6 +286,10 @@
     outline: 2px solid;
   }
 
+  .wrap__submit:focus {
+    color: #FFFFFF;
+  }
+
   .about__article {
     padding-left: 0;
     max-width: none;
